@@ -14,7 +14,7 @@ public class NewBehaviourScript : MonoBehaviour
     [SerializeField, Header("スロットスピード")]
     int _Speed;
      
-    int  []_Slotnuber = null;
+   // int  []_Slotnuber = null;
 
     void Start()
     {

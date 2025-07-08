@@ -20,7 +20,7 @@ public class Slotmain : MonoBehaviour
 
     private int step = 0;
 
-    TextMeshProUGUI[] t = null;
+    //TextMeshProUGUI[] t = null;
 
     //•Û‘¶•Ï”‚Æ‚Í
     

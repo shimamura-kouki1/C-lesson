@@ -20,7 +20,7 @@ public class part3 : MonoBehaviour
 
     Rigidbody _rb;
 
-    int Move2 = 1;
+    //int Move2 = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -44,12 +44,12 @@ public class part3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /* var pos = transform.position;
+         var pos = transform.position;
 
          pos.x = Mathf.Clamp(pos.x,maxX,minX);//‰Û‘è10
 
          transform.position = pos;
-        */
+        
 
         Move();
         
