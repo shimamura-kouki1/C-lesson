@@ -20,12 +20,13 @@ public class hairetu : MonoBehaviour
 
         IEnumerator GenerateBoardCoroutine()
         {
-            for (int x = 0; x < size; x++)
-            {
+        for (int x = 0; x < size; x++)
+        {
                 for (int y = 0; y < size; y++)
                 {
+
                     // 配置位置
-                    Vector3 position = new Vector3(x * spacing, 0, y * spacing);
+                    Vector3 position = new Vector3(x * spacing, y * spacing,0);
 
                     // 白黒交互にPrefabを選ぶ
                     GameObject prefabToUse = ((x + y) % 2 == 0) ? whiteCubePrefab : blackCubePrefab;
