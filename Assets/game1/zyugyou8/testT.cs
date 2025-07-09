@@ -21,6 +21,7 @@ public class testT : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Application.targetFrameRate = 60;
        
         for (int i = 0;i < _BoxLine * _BoxRange ; i++)
         {
@@ -40,11 +41,10 @@ public class testT : MonoBehaviour
     {
         if(Time.frameCount % _Speed == 0)
         {
-            if (_NowCount != _BoxLine && _NowCount != -1)
+            if (_NowCount != _BoxLine * _BoxRange && _NowCount != -1)
             {
                 if (_gridObjects[_NowCount].transform.localScale != Vector3.one * 0.5f)
                 {
-                    Debug.Log(_NowCount);
                     _gridObjects[_NowCount].transform.localScale = Vector3.one * 0.5f;
                 }
                 else
@@ -64,7 +64,6 @@ public class testT : MonoBehaviour
 
             if(_NowCount == _BoxLine * _BoxRange || _NowCount == -1)
             {
-                Debug.Log("aaa");
                 _countReset++;
             }
         }
