@@ -131,8 +131,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 566876475}
-  - component: {fileID: 566876474}
-  - component: {fileID: 566876476}
   - component: {fileID: 566876477}
   m_Layer: 0
   m_Name: GameObject (1)
@@ -141,27 +139,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &566876474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 566876473}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d97d2937b28b6b49bba31ed80083214, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _CubePrefab:
-  - {fileID: 6639640074950866194, guid: d1737359b9af0344a92adacf0704c448, type: 3}
-  - {fileID: 4819570036805708103, guid: f49726c412ef8e14a992f46e6fea5597, type: 3}
-  - {fileID: 3758982873429884225, guid: 23108f2df1f9cb6428f4520231a82e6a, type: 3}
-  _sizeX: 10
-  _sizeY: 10
-  _spacing: 1
-  _scale: 1
-  _minsaize: 0
 --- !u!4 &566876475
 Transform:
   m_ObjectHideFlags: 0
@@ -177,27 +154,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &566876476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 566876473}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98ad6e3c361918744bedc124db020090, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _CubePrefab:
-  - {fileID: 3758982873429884225, guid: 23108f2df1f9cb6428f4520231a82e6a, type: 3}
-  - {fileID: 4819570036805708103, guid: f49726c412ef8e14a992f46e6fea5597, type: 3}
-  - {fileID: 6639640074950866194, guid: d1737359b9af0344a92adacf0704c448, type: 3}
-  _sizeX: 6
-  _sizeY: 20
-  _spacing: 1
-  _scale: 1
-  _minsaize: 0
 --- !u!114 &566876477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,10 +167,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _BoxLine: 20
-  _BoxRange: 10
-  _spacing: 1
+  _BoxRange: 9
+  _spacing: 2
   _scale: 1
-  _Speed: 15
+  _Speed: 2
   _Box:
   - {fileID: 3758982873429884225, guid: 23108f2df1f9cb6428f4520231a82e6a, type: 3}
   - {fileID: 6639640074950866194, guid: d1737359b9af0344a92adacf0704c448, type: 3}
@@ -264,7 +220,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259621121}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.3989146, y: 0.78154725, z: 0.61157876}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
