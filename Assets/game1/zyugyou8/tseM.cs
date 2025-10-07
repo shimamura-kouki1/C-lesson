@@ -12,8 +12,8 @@ public class tseM : MonoBehaviour
     [SerializeField] private float _minsaize;
 
     private List<Transform> gridObjects = new List<Transform>();
-    private int index = 0;
-    private bool shrinking = true;
+    //private int index = 0;
+    //private bool shrinking = true;
     // Start is called before the first frame update
     void Start()
     {

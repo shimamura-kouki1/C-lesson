@@ -14,7 +14,7 @@ public class math : MonoBehaviour
     [SerializeField] float y;
     [SerializeField] float z;
 
-    bool _Inside = false;
+    //bool _Inside = false;
 
     Vector3 _cubeCenter = Vector3.zero;
     float _cubelength = 6f;
