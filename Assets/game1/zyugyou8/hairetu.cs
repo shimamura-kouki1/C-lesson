@@ -4,29 +4,30 @@ using UnityEngine;
 
 public class hairetu : MonoBehaviour
 {
-        [SerializeField] private GameObject whiteCubePrefab;
-        [SerializeField] private GameObject blackCubePrefab;
-        [SerializeField] private int size = 10;              // 正方形のサイズ（10x10）
-        [SerializeField] private float spacing = 1.0f;       // Cube同士の間隔
-        [SerializeField] private float spawnInterval = 0.1f; // 生成間隔（秒）
+    [SerializeField] private GameObject whiteCubePrefab;
+    [SerializeField] private GameObject blackCubePrefab;
+    [SerializeField] private int size = 10;              // 正方形のサイズ（10x10）
+    [SerializeField] private float spacing = 1.0f;       // Cube同士の間隔
+    [SerializeField] private float spawnInterval = 0.1f; // 生成間隔（秒）
 
-        private GameObject[,] board;
+    private GameObject[,] board;
 
-        void Start()
-        {
-            board = new GameObject[size, size];
-            StartCoroutine(GenerateBoardCoroutine());
-        }
+    void Start()
+    {
+        board = new GameObject[size, size];
+        StartCoroutine(GenerateBoardCoroutine());
+    }
 
-        IEnumerator GenerateBoardCoroutine()
-        {
+    IEnumerator GenerateBoardCoroutine()
+    {
         for (int x = 0; x < size; x++)
         {
-                for (int y = 0; y < size; y++)
+            for (int y = 0; y < size; y++)
+            {
+                for (int z = 0; z < size; z++)
                 {
-
                     // 配置位置
-                    Vector3 position = new Vector3(x * spacing, y * spacing,0);
+                    Vector3 position = new Vector3(x * spacing, y * spacing, z * spacing);
 
                     // 白黒交互にPrefabを選ぶ
                     GameObject prefabToUse = ((x + y) % 2 == 0) ? whiteCubePrefab : blackCubePrefab;
@@ -40,4 +41,5 @@ public class hairetu : MonoBehaviour
                 }
             }
         }
+    }
 }
